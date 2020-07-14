@@ -10,13 +10,16 @@
 Material = {
     'Teflon':{  # http://arxiv.org/abs/1703.09144
         'Nitrogen':{'Diffusion Constant': 15.1E-8, 'Solubility': 0.107, 'Activation Energy': 0.17},
-        'Oxygen':{'Diffusion Constant': 31.4E-8, 'Solubility': 0.22, 'Activation Energy': 0.17}, 
+        'Oxygen':{'Diffusion Constant': 31.4E-8, 'Solubility': 0.22, 'Activation Energy': 0.47}, 
         'Krypton':{'Diffusion Constant': 5.6E-8, 'Solubility': 0.58, 'Activation Energy': 0.17},
         'Xenon':{'Diffusion Constant': 0.8E-8, 'Solubility': 0.89, 'Activation Energy': 0.17},
         'Argon':{'Diffusion Constant': 16.8E-8, 'Solubility': 0.088, 'Activation Energy': 0.17},
         'Helium':{'Diffusion Constant': 1270E-8, 'Solubility': 0.033, 'Activation Energy': 0.17}
     },
     'Teflon Yale':{  # http://arxiv.org/abs/1703.09144
+        'Oxygen':{'Diffusion Constant': 31.4E-8, 'Solubility': 0.22, 'Activation Energy': 0.47}, 
+    },
+    'Epoxy':{  # http://arxiv.org/abs/1703.09144
         'Oxygen':{'Diffusion Constant': 31.4E-8, 'Solubility': 0.22, 'Activation Energy': 0.47}, 
     },
     'Viton':{  # http://arxiv.org/abs/1703.09144
@@ -53,6 +56,9 @@ System = {
         'Teflon Yale':{
                 'EXO-Teflon': {'Volume': 0.693, 'Area': 9200.0, 'Thickness': 0.15},
                 'EXO-Acrylic': {'Volume': 0.693, 'Area': 9200.0, 'Thickness': 2.0}
+        },
+        'Epoxy':{
+                'Feedthrough': {'Volume': 0.08, 'Area': 80.0, 'Thickness': 1.0},
         }
     },
     'nEXO':{
